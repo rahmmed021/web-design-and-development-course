@@ -1,0 +1,16 @@
+title: Web Design & Development
+description: Website create & development
+template:
+  repo: web-design-and-development-template
+  name: web-design-and-development
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
